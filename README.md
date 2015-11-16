@@ -7,7 +7,7 @@
 For normal use install via pip.
 
 ```
-pip install git+https://git@github.com:wemaketotem/p1-data-logger.git
+pip install git+https://github.com/wemaketotem/p1-data-logger.git
 ```
 
 ### Development
