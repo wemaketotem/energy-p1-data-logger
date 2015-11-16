@@ -2,18 +2,18 @@
 
 import sys
 
-from dsmrdatalogger import __name__, __version__, __author__
+from p1datalogger import __name__, __version__, __author__
 try:
     from setuptools import setup, find_packages
 except ImportError:
-    print("DSMR data logger needs setuptools in order to build. Install it using"
+    print("P1 data logger needs setuptools in order to build. Install it using"
           " your package manager (usually python-setuptools) or via pip (pip"
           " install setuptools).")
     sys.exit(1)
 
 setup(name=__name__,
       version=__version__,
-      description='DSMR Data Logger',
+      description='P1 Data Logger',
       author=__author__,
       author_email='info@wemaketotem.org ',
       url='http://wemaketotem.org/',
@@ -36,6 +36,8 @@ setup(name=__name__,
           'Topic :: System :: Systems Administration',
           'Topic :: Utilities',
       ],
-      scripts=[],
+      scripts=[
+          'bin/p1datalogger'
+      ],
       data_files=[],
       )
